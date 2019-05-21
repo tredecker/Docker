@@ -1,4 +1,4 @@
-# ---------------------- Docker Workshop ----------------------
+# Docker Workshop
 
 
 ## Execute Sample Docker image to verfiy installation
@@ -117,5 +117,3 @@ docker stack deploy -c docker-compose3.yml getstartedlab
 
 http://192.168.99.100:8080 --> visualiser
 http://192.168.99.101:80   --> WebApp
-
-# ---------------------- Workshop ends here ----------------------
