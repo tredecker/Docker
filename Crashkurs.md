@@ -50,7 +50,7 @@ docker container ls -q
 ## tear down an application
 docker stack rm getstartedlab                             
 
-# Get startet:part4 (Setup Docker swarm)
+# Get startet:part4 (setup docker swarm)
 
 ## check current state
 docker-machine ls
@@ -88,8 +88,7 @@ eval $(docker-machine env -u)
 docker-machine start <machine-name>
 docker-machine stop <machine-name>
 
-# Get startet:part5 (Deploy Service on Stack))
-## --- use docker-compose2.yml !!! ---
+# Get startet:part5 (deploy service on stack, use docker-compose2.yml !!!)
 
 ## configure shell to talk to myvm1
 ### get the command
@@ -97,12 +96,9 @@ docker-machine env myvm1
 ### command
 eval $(docker-machine env myvm1)
 
-## deploy new stack
+## deploy new stack (now use docker-compose3.yml !!!)
 docker stack deploy -c docker-compose2.yml getstartedlab
 docker stack ps getstartedlab
-
-
-## --- now use docker-compose3.yml !!! ---
 
 ## create directory within virtual machine
 docker-machine ssh myvm1 "mkdir ./data"
