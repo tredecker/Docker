@@ -1,7 +1,7 @@
 # Docker Workshop
 
 
-## Execute Sample Docker image to verfiy installation
+## execute sample docker image to verfiy installation
 docker run hello-world
 
 ## check current state
@@ -14,40 +14,40 @@ docker container ls
 	dockerfile
 	requirements.txt
 
-## Compose file
+## compose file
 	docker-compose.yml
 
-## Create image using this directory's Dockerfile
+## create image using this directory's dockerfile
 docker build -t friendlyhello .
 
-## Run "friendlyname" mapping port 4000 to 80
+## run "friendlyname" mapping port 4000 to 80
 docker run -p 4000:80 friendlyhello
 
-### Same, but in detached mode
+### same, but in detached mode
 docker run -d -p 4000:80 friendlyhello         
 
 visit http://localhost:4000
 
-## List all running containers
+## list all running containers
 docker container ls
 docker container stop <name>
 
-## Tag image
+## tag image
 docker tag friendlyhello tredecker/get-started:part2  
 
 
 # Get startet:part3 (deploy as service)
-## List stacks or apps
+## list stacks or apps
 docker stack ls                                            
 
 ## deploy the app
 docker stack deploy -c docker-compose.yml getstartedlab
 
-## List running services associated with an app
+## list running services associated with an app
 docker service ls 
-## List container IDs
+## list container IDs
 docker container ls -q                                      
-## Tear down an application
+## tear down an application
 docker stack rm getstartedlab                             
 
 # Get startet:part4 (Setup Docker swarm)
@@ -81,10 +81,10 @@ docker stack deploy -c docker-compose.yml getstartedlab
 ## check result
 docker stack ps getstartedlab
 
-## Unsetting docker-machine shell variable settings
+## unsetting docker-machine shell variable settings
 eval $(docker-machine env -u)
 
-## Start and stop Docker machines
+## start and stop docker machines
 docker-machine start <machine-name>
 docker-machine stop <machine-name>
 
