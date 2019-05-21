@@ -8,16 +8,17 @@
 	docker image ls
 	docker container ls
 
-# Get startet:part2 (Building our own image)
+# Get startet:part2 
+Building our own image
 ## files to be created in sub-folder app
 
-app.py
-dockerfile
-requirements.txt
+	app.py
+	dockerfile
+	requirements.txt
 
 ## compose file
 	
-docker-compose.yml
+	docker-compose.yml
 
 ## create image using this directory's dockerfile
 	docker build -t friendlyhello .
