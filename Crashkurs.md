@@ -2,7 +2,7 @@
 
 
 ## execute sample docker image to verfiy installation
-docker run hello-world
+	docker run hello-world
 
 ## check current state
 docker image ls
