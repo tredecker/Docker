@@ -133,7 +133,7 @@ command
 	
 	eval $(docker-machine env myvm1)
 
-## deploy new stack (now use docker-compose3.yml !!!)
+deploy new stack
 	
 	docker stack deploy -c docker-compose2.yml getstartedlab
 	docker stack ps getstartedlab
@@ -149,9 +149,9 @@ command
 	
 	eval $(docker-machine env myvm1)
 
-deploy new stack
+## deploy new stack (now use docker-compose3.yml !!!)
 	
 	docker stack deploy -c docker-compose3.yml getstartedlab
 
-http://192.168.99.100:8080 --> visualiser
-http://192.168.99.101:80   --> WebApp
+visit http://192.168.99.100:8080 --> visualiser
+and http://192.168.99.101:80   --> WebApp
