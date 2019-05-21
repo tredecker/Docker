@@ -57,6 +57,7 @@ docker-machine ls
 
 ## create virtual machines
 docker-machine create --driver virtualbox myvm1
+
 docker-machine create --driver virtualbox myvm2
 
 ## get machine's IPs
@@ -64,6 +65,7 @@ docker-machine ls
 
 ## init swarm
 docker-machine ssh myvm1 "docker swarm init --advertise-addr 192.168.99.100"
+
 docker-machine ssh myvm2 "docker swarm join --token <token> <ip>:2377" ## replace <token> and <ip>
 
 ## check result
