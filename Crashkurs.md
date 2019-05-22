@@ -1,4 +1,6 @@
 # Docker Workshop
+## taken from https://docs.docker.com/get-started/
+
 
 
 execute sample docker image to verfiy installation
